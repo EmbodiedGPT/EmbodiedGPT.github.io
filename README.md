@@ -1,4 +1,4 @@
-#EmbodiedGPT
+# EmbodiedGPT
 
 This is the repository that contains source code for the [EmbodiedGPT website](https://embodiedgpt.github.io).
 
