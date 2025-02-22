@@ -12,27 +12,20 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
       dataLayer.push(arguments);
     }
-
     gtag('js', new Date());
-
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -53,9 +46,9 @@
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
       <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
+        <span class="icon">
           <i class="fas fa-home"></i>
-      </span>
+        </span>
       </a>
 
       <div class="navbar-item has-dropdown is-hoverable">
@@ -75,47 +68,44 @@
         </div>
       </div>
     </div>
-
   </div>
 </nav>
-
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">EmbodiedGPT: Vision-Language Pre-Training via
-Embodied Chain of Thought</h1>
+          <h1 class="title is-1 publication-title">EmbodiedGPT: Vision-Language Pre-Training via Embodied Chain of Thought</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              Yao Mu<sup>1</sup>
-             </span>
+              Yao Mu, Qinglong Zhang, Mengkang Hu, Wenhai Wang, Mingyu Ding, Jun Jin, Bin Wang, Jifeng Dai, Yu Qiao, Ping Luo<sup>1</sup>
+            </span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
-      <!-- Code Link. -->
+              <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/EmbodiedGPT/EmbodiedGPT_Pytorch"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fab fa-github"></i>
+                    <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
-                  </a>
+                </a>
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
                 <a href="https://github.com/EmbodiedGPT/EgoCOT_Dataset"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="far fa-images"></i>
+                    <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
+                </a>
+              </span>
             </div>
-
           </div>
         </div>
       </div>
@@ -134,8 +124,8 @@ Embodied Chain of Thought</h1>
             Embodied AI represents a critical frontier in robotics, where the capacity to devise coherent action sequences for robots to accomplish specific tasks in physical environments is both essential and fraught with inherent challenges. Recently, there has been an increasing interest in developing large foundation models capable of generating embodied plans by processing natural language instructions and environmental observations. In this paper, we introduce EmbodiedGPT, a large-scale end-to-end multi-model foundation model for embodied AI.
           </p>
           <p>
-             Our contributions can be categorized into three folds: First, we meticulously craft a large-scale embodied planning dataset, encompassing extensive videos and planning instructions derived from the Ego4D dataset, with scrupulous prompt design and quality assurance. Second, we advocate a cost-effective training method for end-to-end multimodal large models, generating a sequence of sub-goals in planning pursuant to observations by harnessing the potency of the “Chain of Thought.” Specifically, we augment the 7B language model’s capacity to produce high-quality planning by employing prefix adapters to train it on the EgoCOT dataset, circumventing overly divergent language model responses.
-Lastly, we introduce a paradigm for extracting task-related features from LLM-generated planning queries, forming a closed loop between high-level planning and low-level control. Our comprehensive experiments substantiate that our model effectively bolsters the performance of embodied tasks, including Embodied Planning, Embodied Control, Visual Captioning, and Visual Q\&A.
+             Our contributions can be categorized into three folds: First, we meticulously craft a large-scale embodied planning dataset, encompassing extensive videos and planning instructions derived from the Ego4D dataset, with scrupulous prompt design and quality assurance. Second, we advocate a cost-effective training method for end-to-end multimodal large models, generating a sequence of sub-goals in planning pursuant to observations by harnessing the potency of the "Chain of Thought." Specifically, we augment the 7B language model's capacity to produce high-quality planning by employing prefix adapters to train it on the EgoCOT dataset, circumventing overly divergent language model responses.
+Lastly, we introduce a paradigm for extracting task-related features from LLM-generated planning queries, forming a closed loop between high-level planning and low-level control. Our comprehensive experiments substantiate that our model effectively bolsters the performance of embodied tasks, including Embodied Planning, Embodied Control, Visual Captioning, and Visual Q&A.
           </p>
         </div>
       </div>
@@ -144,46 +134,40 @@ Lastly, we introduce a paradigm for extracting task-related features from LLM-ge
   </div>
 </section>
 
-
 <section class="section">
   <div class="container is-max-desktop">
-
     <div class="columns is-centered">
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Framework</h3>
-        <div class="content has-text-justified">
-          <p>
-            The whole framework is shown as follow:
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-full-width">
-            <img src="./static/images/embodiedGPT.png"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
+      <!-- Animation. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <!-- Interpolating. -->
+          <h3 class="title is-4">Framework</h3>
+          <div class="content has-text-justified">
+            <p>
+              The whole framework is shown as follow:
+            </p>
           </div>
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column is-full-width">
+              <img src="./static/images/embodiedGPT.png"
+                   class="interpolation-image"
+                   alt="Interpolate start reference image."/>
+              <p>Start Frame</p>
+            </div>
+          </div>
+          <br/>
+          <!--/ Interpolating. -->
         </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-
       </div>
+      <!--/ Animation. -->
     </div>
-    <!--/ Animation. -->
-     
   </div>
 </section>
-  
+
 <section class="section">
   <div class="container is-max-desktop">
     <h3 class="title is-4">Demos in Franka Kitchen</h3>
     <div class="columns is-centered">
-
       <!-- Animation 1 -->
       <div class="column is-3">
         <div class="content has-text-justified">
@@ -255,16 +239,14 @@ Lastly, we introduce a paradigm for extracting task-related features from LLM-ge
         <br/>
       </div>
       <!--/ Animation 4 -->
-
     </div>
   </div>
 </section>
-  
+
 <section class="section">
   <div class="container is-max-desktop">
     <h3 class="title is-4">Demos in Meta-World</h3>
     <div class="columns is-centered">
-
       <!-- Animation 1 -->
       <div class="column is-3">
         <div class="content has-text-justified">
@@ -336,13 +318,9 @@ Lastly, we introduce a paradigm for extracting task-related features from LLM-ge
         <br/>
       </div>
       <!--/ Animation 4 -->
-
     </div>
   </div>
 </section>
-  
-  
-
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
@@ -357,7 +335,6 @@ Lastly, we introduce a paradigm for extracting task-related features from LLM-ge
 }</code></pre>
   </div>
 </section>
-
 
 </body>
 </html>
