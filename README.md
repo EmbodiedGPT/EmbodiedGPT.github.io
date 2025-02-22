@@ -4,11 +4,13 @@ This is the repository that contains source code for the [EmbodiedGPT website](h
 
 If you find embodiedgpt useful for your work please cite:
 ```
-@misc{2023embodiedgpt,
-    title={EmbodiedGPT: Vision-Language Pre-Training via Embodied Chain of Thought},
-    author={Yao Mu, Qinglong Zhang, Mengkang Hu, Wenhai Wang, Mingyu Ding, Jun Jin, Bin Wang, Jifeng Dai, Yu Qiao, Ping Luo},
-    howpublished = {\url{https://arxiv.org/abs/2305.15021)},
-    year={2023}
+@article{mu2023embodiedgpt,
+  title={Embodiedgpt: Vision-language pre-training via embodied chain of thought},
+  author={Mu, Yao and Zhang, Qinglong and Hu, Mengkang and Wang, Wenhai and Ding, Mingyu and Jin, Jun and Wang, Bin and Dai, Jifeng and Qiao, Yu and Luo, Ping},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  pages={25081--25094},
+  year={2023}
 }
 ```
 
